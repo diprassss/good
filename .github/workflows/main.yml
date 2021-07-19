@@ -1,5 +1,11 @@
 name: Tadaima_Madepaka
-on: [push, pull_request]
+on:
+  schedule:
+    - cron: '* */1 * * *'
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
   build:
     name: Gthub
